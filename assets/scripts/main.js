@@ -3,13 +3,13 @@ var volNumber = document.getElementById("volume-number");
 var volSlider = document.getElementById("volume-slider");
 var noise = document.getElementById("volume-image");
 
-var currSound = document.getElementById("horn-sound");
-var currSoundImage = document.getElementById("sound-image");
+var currSound = document.getElementById('horn-sound');
+var currSoundImage = document.getElementById('sound-image');
 
-var airHorn = document.getElementById("radio-air-horn");
-var carHorn = document.getElementById("radio-car-horn");
-var partyHorn = document.getElementById("radio-party-horn");
-var btn = document.getElementById("honk-btn");
+var airHorn = document.getElementById('radio-air-horn');
+var carHorn = document.getElementById('radio-car-horn');
+var partyHorn = document.getElementById('radio-party-horn');
+var btn = document.getElementById('onk-btn');
 
 
 // volume for slider and number are linked
