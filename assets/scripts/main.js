@@ -39,13 +39,13 @@ function updateVolume(){
 }
 
 function numberChanged(){
-    updateSlider();
-    updateVolume();
+    updateSlider;
+    updateVolume;
 }
 
 function sliderChanged(){
-    updateNumber();
-    updateVolume();
+    updateNumber;
+    updateVolume;
 }
 
 // set other radios to unchecked and set the scr and image to the airHorn
@@ -88,6 +88,6 @@ carHorn.addEventListener("click", carHornActivated);
 partyHorn.addEventListener("click", partyHornActivated);
 btn.addEventListener("click", function(event){
     event.preventDefault();
-    playSound();
+    playSound;
   });
 //btn.addEventListener("click", playSound());
