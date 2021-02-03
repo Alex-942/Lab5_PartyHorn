@@ -13,10 +13,10 @@ var btn = document.getElementById("honk-btn");
 
 // volume for slider and number are linked
 function updateNumber(){
-    volNumber.setAttribute("value", Number(volSlider.getAttribute("value")));
+    volNumber.value = volSlider.value;
 }
 function updateSlider(){
-    volSlider.setAttribute("value", Number(volNumber.getAttribute("value")));
+    volSlider.value = volNumber.value;
 }
 // Do this one last so it doesnt matter which value u read in
 function updateVolume(){
