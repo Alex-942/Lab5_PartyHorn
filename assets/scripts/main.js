@@ -73,7 +73,7 @@ function partyHornActivated(){
 }
 
 function playSound(){
-    if(volNumber.getAttribute("value") != 0){
+    if(Number(volNumber.value)!= 0){
         currSound.play();
     }
 }
