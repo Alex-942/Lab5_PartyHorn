@@ -50,24 +50,24 @@ function sliderChanged(){
 
 // set other radios to unchecked and set the scr and image to the airHorn
 function airHornActivated(){
-    carHorn.setAttribute("checked", false);
-    partyHorn.setAttribute("checked", false);
+    //carHorn.setAttribute("checked", false);
+    //partyHorn.setAttribute("checked", false);
     currSound.setAttribute("src", "./assets/media/audio/air-horn.mp3");
     currSoundImage.setAttribute("src", "./assets/media/images/air-horn.svg");
 }
 
 // set other radios to unchecked and set the scr and image to the carHorn
 function carHornActivated(){
-    airHorn.setAttribute("checked", false);
-    partyHorn.setAttribute("checked", false);
+    //airHorn.setAttribute("checked", false);
+    //partyHorn.setAttribute("checked", false);
     currSound.setAttribute("src", "./assets/media/audio/car-horn.mp3");
     currSoundImage.setAttribute("src", "./assets/media/images/car.svg");
 }
 
 // set other radios to unchecked and set the scr and image to the partyHorn
 function partyHornActivated(){
-    airHorn.setAttribute("checked", false);
-    carHorn.setAttribute("checked", false);
+    //airHorn.setAttribute("checked", false);
+    //carHorn.setAttribute("checked", false);
     currSound.setAttribute("src", "./assets/media/audio/party-horn.mp3");
     currSoundImage.setAttribute("src", "./assets/media/images/party-horn.svg");
 }
