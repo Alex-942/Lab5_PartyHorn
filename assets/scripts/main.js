@@ -81,8 +81,8 @@ function playSound(){
 
 //volSlider.setAttribute("value",volNumber.getAttribute("value")); 
 
-volNumber.addEventListener("change", numberChanged);
-volSlider.addEventListener("change", sliderChanged);
+volNumber.addEventListener("input", numberChanged);
+volSlider.addEventListener("input", sliderChanged);
 airHorn.addEventListener("click", airHornActivated);
 carHorn.addEventListener("click", carHornActivated);
 partyHorn.addEventListener("click", partyHornActivated);
