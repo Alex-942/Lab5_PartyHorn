@@ -20,15 +20,15 @@ function updateSlider(){
 }
 // Do this one last so it doesnt matter which value u read in
 function updateVolume(){
-    if(Number(volNumber.getAttribute("value")) == 0){
+    if(Number(volNumber.value) == 0){
         noise.setAttribute("src", "./assets/media/icons/volume-level-0.svg");
         currSound.volume = 0.0;
     }
-    else if(Number(volNumber.getAttribute("value")) < 34){
+    else if(Number(volNumber.value) < 34){
         noise.setAttribute("src", "./assets/media/icons/volume-level-1.svg");
         currSound.volume = 0.33;
     }
-    else if(Number(volNumber.getAttribute("value")) < 67){
+    else if(Number(volNumber.value) < 67){
         noise.setAttribute("src", "./assets/media/icons/volume-level-2.svg");
         currSound.volume = 0.66;
     }
