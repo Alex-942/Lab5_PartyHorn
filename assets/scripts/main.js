@@ -1,15 +1,14 @@
-
 var volNumber = document.getElementById("volume-number");
 var volSlider = document.getElementById("volume-slider");
 var noise = document.getElementById("volume-image");
 
-var currSound = document.getElementById('horn-sound');
-var currSoundImage = document.getElementById('sound-image');
+var currSound = document.getElementById("horn-sound");
+var currSoundImage = document.getElementById("sound-image");
 
-var airHorn = document.getElementById('radio-air-horn');
-var carHorn = document.getElementById('radio-car-horn');
-var partyHorn = document.getElementById('radio-party-horn');
-var btn = document.getElementById('onk-btn');
+var airHorn = document.getElementById("radio-air-horn");
+var carHorn = document.getElementById("radio-car-horn");
+var partyHorn = document.getElementById("radio-party-horn");
+var btn = document.getElementById("honk-btn");
 
 
 // volume for slider and number are linked
@@ -82,11 +81,11 @@ function playSound(){
 
 //volSlider.setAttribute("value",volNumber.getAttribute("value")); 
 
-volNumber.addEventListener("change", numberChanged());
-volSlider.addEventListener("change", sliderChanged());
-airHorn.addEventListener("click", airHornActivated());
-carHorn.addEventListener("click", carHornActivated());
-partyHorn.addEventListener("click", partyHornActivated());
+volNumber.addEventListener("change", numberChanged);
+volSlider.addEventListener("change", sliderChanged);
+airHorn.addEventListener("click", airHornActivated);
+carHorn.addEventListener("click", carHornActivated);
+partyHorn.addEventListener("click", partyHornActivated);
 btn.addEventListener("click", function(event){
     event.preventDefault();
     playSound();
