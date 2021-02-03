@@ -13,22 +13,22 @@ var btn = document.getElementById("honk-btn");
 
 // volume for slider and number are linked
 function updateNumber(){
-    volNumber.setAttribute("value",volSlider.getAttribute("value"));
+    volNumber.setAttribute("value", Number(volSlider.getAttribute("value")));
 }
 function updateSlider(){
-    volSlider.setAttribute("value",volNumber.getAttribute("value"));
+    volSlider.setAttribute("value", Number(volNumber.getAttribute("value")));
 }
 // Do this one last so it doesnt matter which value u read in
 function updateVolume(){
-    if(volNumber.getAttribute("value") == 0){
+    if(Number(volNumber.getAttribute("value")) == 0){
         noise.setAttribute("src", "./assets/media/icons/volume-level-0.svg");
         currSound.volume = 0.0;
     }
-    else if(volNumber.getAttribute("value") < 34){
+    else if(Number(volNumber.getAttribute("value")) < 34){
         noise.setAttribute("src", "./assets/media/icons/volume-level-1.svg");
         currSound.volume = 0.33;
     }
-    else if(volNumber.getAttribute("value") < 67){
+    else if(Number(volNumber.getAttribute("value")) < 67){
         noise.setAttribute("src", "./assets/media/icons/volume-level-2.svg");
         currSound.volume = 0.66;
     }
@@ -87,7 +87,7 @@ airHorn.addEventListener("click", airHornActivated);
 carHorn.addEventListener("click", carHornActivated);
 partyHorn.addEventListener("click", partyHornActivated);
 btn.addEventListener("click", function(event){
-    //event.preventDefault();
+    event.preventDefault();
     playSound();
   });
 //btn.addEventListener("click", playSound());
